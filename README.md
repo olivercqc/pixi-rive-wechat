@@ -17,8 +17,6 @@ This sits at the intersection of three under-served spots:
 ## Install
 
 ```bash
-npm i pixi-rive-wechat
-# peers:
 npm i pixi.js @rive-app/canvas-advanced
 ```
 
