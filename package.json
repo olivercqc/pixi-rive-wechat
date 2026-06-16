@@ -1,0 +1,59 @@
+{
+  "name": "pixi-rive-wechat",
+  "version": "0.1.0",
+  "description": "Composite Rive animations into PixiJS 8, including the WeChat mini-game (微信小游戏) runtime.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "pixi",
+    "pixijs",
+    "pixi.js",
+    "rive",
+    "wechat",
+    "weapp",
+    "minigame",
+    "微信小游戏",
+    "animation",
+    "wasm"
+  ],
+  "license": "MIT",
+  "author": "olivercqc",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olivercqc/pixi-rive-wechat.git"
+  },
+  "homepage": "https://github.com/olivercqc/pixi-rive-wechat#readme",
+  "bugs": {
+    "url": "https://github.com/olivercqc/pixi-rive-wechat/issues"
+  },
+  "peerDependencies": {
+    "@rive-app/canvas-advanced": "^2.38.0",
+    "pixi.js": "^8.0.0"
+  },
+  "devDependencies": {
+    "@rive-app/canvas-advanced": "^2.38.1",
+    "pixi.js": "^8.19.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.5.0"
+  }
+}
